@@ -1,0 +1,7 @@
+vutbr.checkers.client
+vutbr.checkers.client.swing
+vutbr.checkers.game
+vutbr.checkers.protocol
+vutbr.checkers.protocol.reply
+vutbr.checkers.protocol.request
+vutbr.checkers.server

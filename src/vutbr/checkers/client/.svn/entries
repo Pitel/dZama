@@ -1,0 +1,79 @@
+8
+
+dir
+165
+http://svn.nomi.cz/svn/checkers/final/src/vutbr/checkers/client
+http://svn.nomi.cz/svn/checkers
+
+
+
+2008-04-20T19:27:23.836622Z
+165
+onovy
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ef45185b-2247-0410-9407-b9a7ae210a13
+
+ClientConfig.java
+file
+
+
+
+
+2008-04-21T10:14:11.000000Z
+0ce111da4c04736386a7480380aecd02
+2008-04-20T19:27:23.836622Z
+165
+onovy
+
+Main.java
+file
+
+
+
+
+2008-04-21T10:14:11.000000Z
+efa9407c993cabe6906bc36ef239ce63
+2008-04-20T19:27:23.836622Z
+165
+onovy
+
+ReplayGame.java
+file
+
+
+
+
+2008-04-21T10:14:11.000000Z
+927dfabccaf22c2ea1fd316dca9f816e
+2008-04-20T19:27:23.836622Z
+165
+onovy
+
+swing
+dir
+
+ClientGame.java
+file
+
+
+
+
+2008-04-21T10:14:11.000000Z
+d7c108c33922613231b12208feadd14c
+2008-04-20T19:27:23.836622Z
+165
+onovy
+

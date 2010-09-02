@@ -1,0 +1,105 @@
+Protocol
+^^^^^^^^
+````````
+
+  * Jeden prikaz = jeden radek
+  * Deleni typu prikazu na request a reply
+  * Oddelovac = \s
+  * Prvni cast radku je typ prikazu: req/rep
+  * Druha cast radku je prikaz (viz nize)
+  * Treti (a dalsi) cast radku jsou parametry prikazu
+
+Priklad komunikace:
+REQ LOGIN xnovyo01
+REP LOGIN_OK
+
+Request
+=======
+
+1. LOGIN
+--------
+Parametry: login
+* Prihlasi uzivatele
+
+2. REGISTER
+-----------
+Parametry: login
+* Zaregistruje uzivatele
+
+3. PING
+-------
+Parametry:
+* Odesle prikaz ping a ceka na reply pong
+
+4. GAME
+-------
+Parametry: login
+* Odesle zadost o hru s 'login'
+
+5. TURN
+-------
+Parametry: x y toX toY
+* Tah figurky z x,y na toX,toY
+
+6. GAME_END
+-----------
+Parametry: 
+* Ukonceni hry
+
+
+Reply
+=====
+1. BAD_COMMAND
+--------------
+Parametry:
+* Zadany spatny prikaz
+
+2. LOGIN_ERROR
+--------------
+Parametry: message
+* Chyba pri prihlasovani uzivatele
+
+3. LOGIN_OK
+-----------
+Parametry: 
+* Prihlaseni uspesne
+
+4. PONG
+-------
+Parametry: 
+* Odpoved na ping
+
+5. USER_LOGIN
+--------------
+Parametry: login
+* Prihlasen novy uzivtel na server
+
+6. USER_LOGOUT
+--------------
+Parametry: login
+* Odhlasen uzivatel ze serveru
+
+7. GAME_ACCEPT
+--------------
+Parametry: login
+* Prijmuti zadosti o hru od hrace 'login'
+
+8. GAME_REJECT
+--------------
+Parametry: login
+* Odmitnuti zadosti o hru od hrace 'login'
+
+9. GAME_ERROR
+--------------
+Parametry: message
+* Chyba zadosti o hru
+
+10. TURN_ERROR
+--------------
+Parametry: message
+* Chyba pri tahu
+
+11. TURN_OK
+-----------
+Parametry: 
+* Tahu probehl vporadku

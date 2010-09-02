@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="cs" />
+<title>Nápověda aplikace dŽáma</title>
+<style type="text/css">
+body {
+	background-color:#F4F2E5;
+	color:#000000;  
+	font-family: serif;
+	font-size: 105%;
+	padding: 5px;
+}
+pre {
+	background-color: white;
+	padding: 1em;
+}
+h1, h2 {
+	background-color: #5E341C;
+	color: white;
+	padding: 5px;
+}
+ul {
+	list-style-type: disc;
+}
+.center {
+	margin:0 auto;
+}
+</style>
+</head>    
+<body>
+
+
+
+<h1 id="napoveda-aplikace-dzama">Nápověda aplikace dŽáma</h1>
+<img src="../splash.png" alt="Džáma" class="center"/>
+<p><strong>Témata nápovědy</strong>:</p>
+
+<ul>
+    <li><a href="#pozadavky-na-system">Požadavky na systém</a></li>
+
+    <li><a href="#zakladni-prace-s-klientem">Základní práce s&nbsp;Klientem</a></li>
+
+    <li><a href="#prubeh-hry">Průběh hry</a></li>
+
+    <li><a href="#pravidla-hry-dama">Pravidla hry Dáma</a></li>
+
+    <li><a href="#autori">Autoři</a></li>
+</ul>
+
+<a name="pozadavky-na-system"></a>
+<h2 id="pozadavky-na-system">Požadavky na systém</h2>
+
+<ul>
+    <li>Operační systém: Windows XP, Windows Vista, GNU/Linux, FreeBSD.</li>
+
+    <li>Java: Sun Java 1.6&nbsp;JRE</li>
+</ul>
+
+<a name="zakladni-prace-s-klientem"></a>
+<h2 id="zakladni-prace-s-klientem">Základní práce s&nbsp;Klientem</h2>
+
+<p>Herního klienta spustíte příkazem <tt>ant client</tt>
+nebo <tt>java -jar client.jar</tt>.</p>
+
+<img src="prihlaseni.jpg" alt="Džáma" class="center"/>
+
+<h3 id="registrace">Registrace</h3>
+
+<p>Registrace nového uživatele proběhne tak, že zadáte váš Nick,
+správnou IP adresu serveru a stisknete tlačítko <strong>registrovat</strong>.
+Potvrzení o registraci na server se vám zobrazí při přechodu do stavu on-line, viz. níže.</p>
+
+<h3 id="prihlaseni">Přihlášení</h3>
+
+<p>Přihlašovací okno po vás vyžaduje:<br />
+Nick&nbsp;&ndash; Přihlašovací jméno pod kterým jste zaregistrování na serveru.
+<br />
+Server&nbsp;&ndash; IP adresa serveru, ke kterému se chcete připojit.<br />
+Port&nbsp;&ndash; Port pro komunikaci (výchozí je 5690)</p>
+<p>Údaje můžete později změnit přes menu <strong><em>Hra &gt; Nastavení</em></strong></p>
+
+<p><strong>Pokud chcete s&nbsp;aplikací pracovat ve stavu off-line, například pro
+prohlížení lokálně uložených partií, můžete zadat
+i&nbsp;neplatné&nbsp;údaje.</strong></p>
+
+<p>Po kliknutí na tlačítko přihlásit se vám zobrazí <strong>základní
+obrazovka</strong>, která se skládá z&nbsp;nabídkového menu, seznamu hráčů
+(levá část okna), seznamu tahů (pravá část okna), herní plochy a
+ovládacích tlačítek.</p>
+
+<p><strong>Upozornění: časová prodleva při zobrazení základní obrazovky
+může být několik sekund v&nbsp;závislosti na výkonu vašeho&nbsp;PC.</strong></p>
+
+<h3 id="off-line-a-on-line-stav">Off-line a On-line stav</h3>
+
+<p>Aplikace pracuje ve dvou režimech: v&nbsp;off-line a on-line. Výchozí
+režim je off-line. V&nbsp;něm zůstáváte i&nbsp;po zadání platného Nicku a adresy
+serveru.</p>
+
+<p>Off-line stav je vhodný pro přehrávání 
+partií přes menu <strong><em>Hra &gt; Nahrát partii</em></strong>. Uložené
+partie jsou ve formátu XML souboru. Přehrávat je můžete za pomoci
+ovládacích tlačítek pod herní plochou. Můžete se buď ručně posouvat po jednotlivých krocích nebo zvolit aoutoamtické krokování.</p>
+
+<p>Do <strong>on-line</strong> stavu se dostanete přes menu <strong><em>Hra
+&gt; On-line</em></strong>. V&nbsp;tuto chvíli proběhne ověření zda na dané IP
+adrese běží server a zda jste správně zadali váš Nick. Na případnou
+chybu budete upozorněni. Pokud vše proběhne v&nbsp;pořádku, ve stavovém
+řádku hlavního okna se místo <strong>stav off-line</strong> zobrazí
+<strong>stav on-line</strong>. V&nbsp;levém sloupci uvidíte další on-line
+uživatele.</p>
+
+<h3 id="vyzva-ke-hre">Výzva ke hře</h3>
+
+<p>V&nbsp;<strong>on-line</strong> stavu můžete vyzvat jiného hráče. Provedete
+tak označením hráče ze seznamu a stiskem tlačítka
+<strong><em>Vyzvat</em></strong>.</p>
+
+<p>Rovněž vás může někdo z&nbsp;hráčů vyzvat. Zobrazí se vám okno
+s&nbsp;dotazem, zda chcete hru přijmout.</p>
+
+
+<a name="prubeh-hry"></a>
+<h2 id="prubeh-hry">Průběh hry</h2>
+
+<p>Pro lepší pochopení hry nejprve prostudujte <a
+href="#pravidla-hry-dama">pravidla hry Dáma</a>.</p>
+
+<img src="zakladni-obrazovka.jpg" alt="Džáma" class="center"/>
+
+<h3 id="herni-ukony">Herní úkony</h3>
+
+<p>Vyzyvatel dostane bílé figurky a začíná jako první. Vaše figurky jsou
+ve spodní části obrazovky. Soupeřovy figurky v&nbsp;horní&nbsp;části.</p>
+
+<p>Pokud jste na tahu, vyberete kliknutím levého tlačítka myši figurku se
+kterou chcete táhnout. Poličko se červeně označí. Druhým kliknutím
+vyberete pole kam chcete táhnout. Dojde ke kontrole, zda je tah přípustný.
+Pokud ano, figurka se přesune. V&nbsp;případě nepovoleného tahu se nic
+neprovede. Pokud chcete označit jinou figurku, musíte nejprve levým klikem odznačit tu původní.</p>
+
+<p>Předání hry provedete tlačítkem předat&nbsp;tah nebo kliknutím 
+pravého tlačítka myši s kurzorem v oblasti hrací desky.</p>
+
+<p>Pokud je na tahu soupeř, čekáte na jeho tah. Tah soupeře se přes server
+přenese k&nbsp;Vám a okamžitě se projeví na hrací desce. Jakmile Vám předá
+tah, zaktivní se tlačítko předat tah a hrajete Vy.</p>
+
+<h3 id="preruseni-partie">Přerušení partie</h3>
+
+<p>Kterýkoliv z&nbsp;hráčů může hru opustit a tím ukončit zavřením klienta nebo přechodem
+do off-line módu.</p>
+
+<h3 id="vitezstvi-a-prohra">Vítězství a prohra</h3>
+
+<p>V&nbsp;případě, že jeden z&nbsp;hráčů vyhraje, zobrazí se vám okno
+s&nbsp;výsledkem. Následně je ještě možné danou partii uložit pro její
+pozdější přehrávání.</p>
+
+
+<a name="pravidla-hry-dama"></a>
+<h2 id="pravidla-hry-dama">Pravidla hry Dáma</h2>
+
+<p>Dáma je společenská hra pro dva hráče. Hraje se na 64&nbsp;polích
+uspořádaných do 8×8 souřadnic. Střídají se světlá a černá pole. Ve
+hře se vyskytují základní figurky (dále jen <strong>figurky</strong>) a
+figurky dámy (dále jen <strong>dámy</strong>).</p>
+
+<h3 id="zacatek-hry">Začátek hry</h3>
+
+<ul>
+    <li>Hráč má bíle nebo černé figurky.</li>
+
+    <li>Na začátku hry stojí figurky ve dvou krajních řadách u&nbsp;svého hráče
+    ob jedno pole ( na černých polích).</li>
+
+    <li>Začíná hráč za bílé figurky, poté se hráči v&nbsp;tazích pravidelně
+    střídají.</li>
+</ul>
+
+<h3 id="prubeh-hry">Průběh hry</h3>
+
+<ul>
+    <li>Základní figurky se pohybují pouze šikmě vpřed na nejbližší volné
+    pole. Pohyb zpět není dovolen.</li>
+
+    <li>Pokud figurka stojí těsně před figurkou protihráče (diagonálně), za
+    nímž je jedno pole ve směru pohybu volné, přeskočí tuto figurku a
+    vyřadí ji tak ze hry. Pokud má více možností přeskočení soupeřových
+    figurek, může si vybrat nejvýhodnější skok. Skoky nejsou povinné.</li>
+
+    <li>Figurka může provést i&nbsp;skoky vícenásobné a po dopadu změnit
+    směr&nbsp;skoku.</li>
+
+    <li>Dostane-li se figurka tahem nebo skokem do poslední řady, stává
+    se&nbsp;dámou.</li>
+
+    <li>Dáma se může pohybovat jakýmkoli směrem diagonálně o&nbsp;libovolný
+    počet volných&nbsp;polí.</li>
+
+    <li>Pro dámu platí stejná pravidla skákání jako pro obyčejné figurky,
+    liší se jen v&nbsp;tom, že dáma nemusí stát těsně před přeskakovanou
+    figurkou. Skočit však musí hned za přeskakovanou figurku. Rovněž u&nbsp;dámy
+    skok není povinný.</li>
+
+    <li>Hru vyhrává ten hráč, který vezme soupeři všechny figurky.</li>
+</ul>
+
+<h3 id="cil-hry">Cíl hry</h3>
+
+<ul>
+    <li>Odstranit z&nbsp;desky všechny soupeřovy figurky.</li>
+</ul>
+
+
+<a name="autori"></a>
+<h2 id="autori">Autoři</h2>
+
+<p>Vytvořeno jako projekt do předmětů IJA a IPP, 2008.</p>
+
+Nový Ondřej 			&lt;xnovyo01@stud.fit.vutbr.cz&gt;<br />
+Kaláb Jan				&lt;xkalab00@stud.fit.vutbr.cz&gt;<br />
+Janda Martin	 		&lt;xjanda01@stud.fit.vutbr.cz&gt;<br />
+Choleva Ondřej 	&lt;xchole00@stud.fit.vutbr.cz&gt;<br />
+
+</body>
+</html>

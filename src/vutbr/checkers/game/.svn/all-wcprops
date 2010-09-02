@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game
+END
+GamePiece.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/GamePiece.java
+END
+GameBoard.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/GameBoard.java
+END
+GameHistoryMove.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/GameHistoryMove.java
+END
+GameTurnState.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/GameTurnState.java
+END
+GameHistoryTurn.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/GameHistoryTurn.java
+END
+GamePieceKing.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/GamePieceKing.java
+END
+Game.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/Game.java
+END
+GameHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/GameHistory.java
+END
+GamePieceMan.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/game/GamePieceMan.java
+END

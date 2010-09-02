@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request
+END
+ProtocolRequestRegister.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request/ProtocolRequestRegister.java
+END
+ProtocolRequestLogin.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request/ProtocolRequestLogin.java
+END
+ProtocolRequestTurn.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request/ProtocolRequestTurn.java
+END
+ProtocolRequestExit.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request/ProtocolRequestExit.java
+END
+ProtocolRequestGame.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request/ProtocolRequestGame.java
+END
+ProtocolRequestPing.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request/ProtocolRequestPing.java
+END
+ProtocolRequestTurnEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request/ProtocolRequestTurnEnd.java
+END
+ProtocolRequestGameEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/checkers/!svn/ver/165/final/src/vutbr/checkers/protocol/request/ProtocolRequestGameEnd.java
+END

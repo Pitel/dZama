@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request
+END
+ProtocolRequestRegister.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/ProtocolRequestRegister.html
+END
+ProtocolRequestLogin.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/ProtocolRequestLogin.html
+END
+ProtocolRequestTurn.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/ProtocolRequestTurn.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/package-frame.html
+END
+ProtocolRequestExit.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/ProtocolRequestExit.html
+END
+ProtocolRequestGame.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/ProtocolRequestGame.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/package-summary.html
+END
+ProtocolRequestPing.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/ProtocolRequestPing.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/package-tree.html
+END
+ProtocolRequestTurnEnd.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/ProtocolRequestTurnEnd.html
+END
+ProtocolRequestGameEnd.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/checkers/!svn/ver/165/final/doc/javadoc/vutbr/checkers/protocol/request/ProtocolRequestGameEnd.html
+END

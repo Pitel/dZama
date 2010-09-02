@@ -1,0 +1,51 @@
+<project default="compile">
+    <target name="compile">
+	<mkdir dir="build" />
+	<mkdir dir="jar-client" />
+	<mkdir dir="jar-server" />
+
+	<javac
+	    srcdir="src"
+	    destdir="build"
+	    encoding="UTF-8"
+	    />
+
+	<antcall target="jar" />
+    </target>
+
+    <target name="jar">
+	<jar destfile="jar-client/client.jar" duplicate="fail">
+	    <manifest>
+		<attribute name="Main-Class" value="vutbr.checkers.client.Main"/>
+	    </manifest>
+	    <fileset dir="build" excludes="vutbr/checkers/server/**" />
+	    <fileset dir="." includes="resources/**" />
+	</jar>
+	<jar destfile="jar-server/server.jar" duplicate="fail">
+	    <manifest>
+		<attribute name="Main-Class" value="vutbr.checkers.server.Main"/>
+	    </manifest>
+	    <fileset dir="build" excludes="vutbr/checkers/client/**" />
+	</jar>
+    </target>
+
+    <target name="clean">
+	<delete dir="build" />
+	<delete dir="jar-client" />
+	<delete dir="jar-server" />
+	<delete dir="doc/javadoc" />
+    </target>
+    
+    <target name="client" depends="compile">
+	<java jar="jar-client/client.jar" fork="true" />
+    </target>
+    
+    <target name="server" depends="compile">
+	<java jar="jar-server/server.jar" fork="true" />
+    </target>
+    
+    <target name="doc">
+	<mkdir dir="doc/javadoc" />
+	<javadoc sourcepath="src" destdir="doc/javadoc" packagenames="vutbr.*" />
+    </target>
+</project>
